@@ -4,6 +4,10 @@ const cartsRouter = require("./routes/carts.router");
 
 const app = express();
 
+app.get("/", (req, res) => {
+    res.send("<h1>Hoa mundo</h1>")
+})
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
